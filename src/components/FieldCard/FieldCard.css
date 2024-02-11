@@ -1,0 +1,248 @@
+/* .field-card {
+  width: 300px;
+  box-shadow: none;
+  margin: 10px;
+}
+
+.field-card .field-image {
+  width: 100%;
+  height: 100%;
+  filter: contrast(1.15)  brightness(0.8);
+}
+
+.field-card .field-area-text{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.field-card .field-area-row,
+.field-card .location-row {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 5px;
+}
+
+.field-card .location-row .location-text{
+  opacity: 0.7;
+}
+
+.field-card .location-icon {
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.field-card .field-card-info{
+  background-color: var(--primarymain);
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+  box-shadow: var(--shadows);
+  transform: translate(0px, -40px);
+}
+
+.field-card .image-container{
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  box-shadow: var(--shadows);
+}
+
+.field-card .nb-plot {
+  background-color: #efeb82;
+  width: fit-content;
+  margin: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  color: #ab785d;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+
+.fieldList {
+  display: flex;
+  width: fit-content;
+  gap: 5px;
+  padding: 10px;
+}
+
+.Field-Scroll {
+  width: 100%;
+  padding: 5px 0px;
+  overflow-x: scroll;
+}
+
+
+.searchbar{
+  margin: 25px 20px;
+  margin-top: 42px;
+  background-color: rgb(231, 255, 226);
+  border-radius: 10px;
+  display: flex;
+  padding: 10px;
+}
+
+.searchbar .native-input.sc-ion-input-ios {
+  font-size: x-large;
+  color: #9ebda1;
+}
+
+.ctitle {
+  font-weight: 500;
+  font-size: 38px;
+  padding: 0px 25px ;
+  color: #494949;
+  margin: 0;
+}
+
+h1.ctitle {
+  font-size: 40px;
+}
+
+h2.ctitle {
+  font-size: 24px;
+  opacity: 0.6;
+  padding: 10px 25px ;
+}
+
+ion-img.ios.searchbar-icon {
+  width: 25px;
+  margin-right: 8px;
+}
+
+
+ion-fab {
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+}
+
+ion-img.searchbar-icon {
+  width: 35px;
+} 
+ */
+
+ .field-card {
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: auto; /* Set margin to auto to center horizontally */
+  margin-top: 20px; /* Adjust top margin as needed */
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Align children vertically */
+  justify-content: center; /* Center children horizontally */
+  align-items: center; /* Center children vertically */
+}
+
+.field-card .field-image {
+  width:  100%;
+  height:  150px; /* Adjusted height */
+  object-fit: cover; /* Added to maintain aspect ratio */
+  filter: contrast(1.15) brightness(0.8);
+}
+
+.field-card .field-area-text {
+  width:  100%;
+  margin-bottom:  10px;
+  font-weight:  600; /* Made text bold */
+}
+
+.field-card .field-area-row,
+.field-card .location-row {
+  color: #333; /* Changed text color */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:  5px;
+}
+
+.field-card .location-row .location-text {
+  opacity:  0.7;
+  font-size:  14px; /* Smaller font size */
+}
+
+.field-card .location-icon {
+  margin-right:  10px;
+  width:  24px; /* Smaller icon size */
+  height:  24px; /* Smaller icon size */
+}
+
+.field-card .field-card-info {
+  background-color: #fff; /* White background */
+  border-radius:  10px;
+  overflow: hidden;
+  width:  100%;
+  box-shadow:  0  4px  6px rgba(0,  0,  0,  0.1);
+  padding:  10px; /* Added padding */
+}
+
+.field-card .image-container {
+  width:  100%;
+  height:  150px; /* Adjusted height */
+  overflow: hidden;
+  border-radius:  10px;
+  margin-bottom:  10px;
+  box-shadow:  0  4px  6px rgba(0,  0,  0,  0.1);
+}
+
+.field-card .nb-plot {
+  /* 0c3b2e ffba00 */
+  background-color: #ffba00;
+  width:  100%; /* Utiliser  100% pour s'adapter à la largeur de l'écran mobile */
+  margin:  10px; /* Réduire les marges pour un espace plus fluide sur mobile */
+  padding:  10px; /* Réduire le padding pour économiser de l'espace sur mobile */
+  border-radius:  5px; /* Réduire le rayon pour un aspect plus moderne sur mobile */
+  color: #0c3b2e;
+  font-weight:  500; /* Réduire le poids de la police pour une apparence moins lourd sur mobile */
+  margin-left:  0; /* Supprimer la marge gauche pour centrer sur mobile */
+  box-sizing: border-box; /* Assurer que le padding n'augmente pas la largeur totale */
+}
+
+/* Media Query pour les petits écrans mobiles */
+@media (max-width:  480px) {
+  .field-card .nb-plot {
+    font-size:  14px; /* Utiliser une taille de police appropriée pour les mobiles */
+    line-height:  1.5; /* Améliorer la lisibilité avec un espacement de ligne approprié */
+  }
+}
+
+.field-card a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.searchbar{
+  margin: 25px 20px;
+  margin-top: 42px;
+  background-color: rgb(231, 255, 226);
+  border-radius: 10px;
+  display: flex;
+  padding: 10px;
+}
+
+.searchbar .native-input.sc-ion-input-ios {
+  font-size: x-large;
+  color: #9ebda1;
+}
+
+
+ion-img.ios.searchbar-icon {
+  width: 25px;
+  margin-right: 8px;
+}
+
+
+ion-fab {
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+}
+
+ion-img.searchbar-icon {
+  width: 35px;}
